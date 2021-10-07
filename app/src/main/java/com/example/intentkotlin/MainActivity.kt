@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity() {
                 resultOfIntent()
             }else editText1!!.error = "Ошибка"
 
-            if(editText3!!.text.toString().equals(editText4!!.text.toString())){
+            if(editText3!!.text.toString() == editText4!!.text.toString()){
                 resultOfIntent()
             }else editText4!!.error = "Пароли не совпадают"
         }
     }
 
-    fun resultOfIntent() {
+    private fun resultOfIntent() {
         val result1 = editText1!!.text.toString()
         val result2 = editText2!!.text.toString()
         val result3 = editText3!!.text.toString()
