@@ -13,4 +13,7 @@
     <string name="resultOfRegistration">Result</string>
     <string name="result_menu">Вы в меню результата!</string>
     <string name="photo_menu">Вы в меню фото</string>
+    <string name="calculator_item_menu">Calculator</string>
+    <string name="camera_item_menu">Camera</string>
+    <string name="weather_item_menu">Weather</string>
 </resources>

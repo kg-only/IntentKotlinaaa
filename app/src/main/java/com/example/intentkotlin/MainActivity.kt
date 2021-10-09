@@ -1,11 +1,10 @@
 package com.example.intentkotlin
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import com.example.intentkotlin.databinding.ActivityBottomNavigavionBinding
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     private var btn: Button? = null
@@ -37,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val result2 = editText2!!.text.toString()
         val result3 = editText3!!.text.toString()
         val result4 = editText4!!.text.toString()
-        val intent = Intent(this, MainActivitySecond::class.java)
+        val intent = Intent(this, MenuActivity::class.java)
         intent.putExtra("result1", result1)
         intent.putExtra("result2", result2)
         intent.putExtra("result3", result3)
