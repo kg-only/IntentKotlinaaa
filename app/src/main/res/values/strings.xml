@@ -5,4 +5,12 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm_password</string>
     <string name="reg">Регистрация</string>
+    <string name="title_activity_bottom_navigavion">BottomNavigavionActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="photo">Photo</string>
+    <string name="resultOfRegistration">Result</string>
+    <string name="result_menu">Вы в меню результата!</string>
+    <string name="photo_menu">Вы в меню фото</string>
 </resources>

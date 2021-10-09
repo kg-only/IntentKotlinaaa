@@ -2,7 +2,6 @@ package com.example.intentkotlin
 
 import android.Manifest
 import android.app.Activity
-import android.app.DownloadManager
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -19,12 +18,12 @@ private const val REQUEST_CODE_CAMERA = 100
 private const val REQUEST_CODE_CAPTURE = 1
 
 class MainActivitySecond : AppCompatActivity() {
-    private var textView1: TextView?=null
-    private var textView2:TextView?=null
-    private var textView3:TextView?=null
-    private var textView4:TextView?=null
-    private var btnCamera:Button?=null
-    private var cameraImageView:ImageView?=null
+    private var textView1: TextView? = null
+    private var textView2: TextView? = null
+    private var textView3: TextView? = null
+    private var textView4: TextView? = null
+    private var btnCamera: Button? = null
+    private var cameraImageView: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_second)
@@ -46,16 +45,16 @@ class MainActivitySecond : AppCompatActivity() {
         textView4!!.text = result4
 
 
-        btnCamera!!.setOnClickListener{
+        btnCamera!!.setOnClickListener {
             cameraPermission()
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == Activity.RESULT_OK){
-            if(requestCode == REQUEST_CODE_CAPTURE){
-                if (data != null && data.extras !=null){
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REQUEST_CODE_CAPTURE) {
+                if (data != null && data.extras != null) {
                     val bitmap = data.extras!!.get("data")
                     cameraImageView!!.setImageBitmap(bitmap as Bitmap?)
                 }
@@ -63,11 +62,15 @@ class MainActivitySecond : AppCompatActivity() {
         }
     }
 
-    fun cameraPermission(){
+    fun cameraPermission() {
         val permission = Manifest.permission.CAMERA
-        if(ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED){
+        if (ContextCompat.checkSelfPermission(
+                this,
+                permission
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
             showCamera()
-        }else{
+        } else {
             requestCameraPermission()
         }
     }
