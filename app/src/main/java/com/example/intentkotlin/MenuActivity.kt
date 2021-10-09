@@ -32,7 +32,7 @@ class MenuActivity : AppCompatActivity() {
             }
         }
     }
-private fun openCalculatorActivity(activity: Activity){
+private fun openCalculatorActivity(){
     val intent = Intent(this, MainActivitySecond::class.java)
     startActivity(intent)
 }
