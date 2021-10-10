@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentKotlin">
         <activity
+            android:name=".DiceActivity"
+            android:exported="true" />
+        <activity
             android:name=".CameraOpenActivity"
             android:exported="true" />
         <activity

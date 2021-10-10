@@ -12,8 +12,8 @@
     </item>
     <item
         android:id="@+id/weather"
-        android:icon="@drawable/ic_weather"
-        android:title="@string/weather_item_menu">
+        android:icon="@drawable/ic_dice"
+        android:title="@string/the_dice">
     </item>
 
 </menu>

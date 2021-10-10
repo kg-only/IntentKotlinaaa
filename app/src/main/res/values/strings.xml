@@ -38,4 +38,6 @@
     <string name="btn_clear">C</string>
     <string name="btn_push">жми</string>
     <string name="hint_0">0</string>
+    <string name="lets_roll">Let\'s Roll</string>
+    <string name="the_dice">The Dice</string>
 </resources>

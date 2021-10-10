@@ -26,6 +26,8 @@ class MenuActivity : AppCompatActivity() {
                     true
                 }
                 R.id.weather -> {
+                    val intent = Intent(this, DiceActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
