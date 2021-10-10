@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentKotlin">
         <activity
+            android:name=".CameraOpenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="true" />
+        <activity
             android:name=".MenuActivity"
             android:exported="true" />
         <activity

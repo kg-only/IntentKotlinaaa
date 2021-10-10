@@ -17,7 +17,8 @@ import androidx.core.content.ContextCompat
 private const val REQUEST_CODE_CAMERA = 100
 private const val REQUEST_CODE_CAPTURE = 1
 
-class MainActivitySecond : AppCompatActivity() {
+
+class CameraOpenActivity : AppCompatActivity() {
     private var textView1: TextView? = null
     private var textView2: TextView? = null
     private var textView3: TextView? = null
@@ -26,7 +27,7 @@ class MainActivitySecond : AppCompatActivity() {
     private var cameraImageView: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_second)
+        setContentView(R.layout.activity_camera_open)
 
         textView1 = findViewById(R.id.text1)
         textView2 = findViewById(R.id.text2)

@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
     android:id="@+id/calculator"
-    android:icon="@drawable/calculate"
+    android:icon="@drawable/ic_calculator"
     android:title="@string/calculator_item_menu">
 </item>
     <item
         android:id="@+id/camera"
-        android:icon="@drawable/calculate"
+        android:icon="@drawable/ic_photo_make"
         android:title="@string/camera_item_menu">
     </item>
     <item
         android:id="@+id/weather"
-        android:icon="@drawable/calculate"
+        android:icon="@drawable/ic_weather"
         android:title="@string/weather_item_menu">
     </item>
 

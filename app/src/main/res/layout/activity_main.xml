@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_back"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="150dp"
         android:background="@color/white"
-        android:layout_marginVertical="100dp"
         tools:ignore="NotSibling"
         tools:layout_editor_absoluteX="30dp">
 
@@ -21,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="100dp"
             android:hint="@string/number"
             app:counterEnabled="true"
             app:counterMaxLength="9"
@@ -30,7 +30,7 @@
             app:helperTextTextColor="#FF0000"
             app:prefixText="+996"
             app:prefixTextColor="@color/purple_200"
-            app:startIconDrawable="@drawable/call"
+            app:startIconDrawable="@drawable/ic_call"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="30dp">
 
@@ -55,7 +55,7 @@
             app:helperText="Введите почту"
             app:helperTextTextColor="#FF0000"
             app:layout_constraintTop_toBottomOf="@+id/editNumber"
-            app:startIconDrawable="@drawable/email"
+            app:startIconDrawable="@drawable/ic_email"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="30dp">
 
@@ -81,7 +81,7 @@
             app:helperText="Введите пароль"
             app:helperTextTextColor="#FF0000"
             app:layout_constraintTop_toBottomOf="@+id/editEmail"
-            app:startIconDrawable="@drawable/lock"
+            app:startIconDrawable="@drawable/ic_lock"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="30dp">
 
@@ -107,7 +107,7 @@
             app:helperText="Подтвердите пароль"
             app:helperTextTextColor="#FF0000"
             app:layout_constraintTop_toBottomOf="@+id/editPassword"
-            app:startIconDrawable="@drawable/lock"
+            app:startIconDrawable="@drawable/ic_lock"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="30dp">
 
@@ -135,9 +135,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

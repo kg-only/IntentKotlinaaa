@@ -16,15 +16,16 @@ class MenuActivity : AppCompatActivity() {
             when (item.itemId) {
 
                 R.id.calculator -> {
-                    openCalculatorActivity()
+                    val intent = Intent(this, CalculatorActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.camera -> {
-                    openCalculatorActivity()
+                    val intent = Intent(this, CameraOpenActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.weather -> {
-                    openCalculatorActivity()
                     true
                 }
                 else -> false
@@ -32,10 +33,5 @@ class MenuActivity : AppCompatActivity() {
             }
         }
     }
-private fun openCalculatorActivity(){
-    val intent = Intent(this, MainActivitySecond::class.java)
-    startActivity(intent)
-}
-
 }
 
